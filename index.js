@@ -10,8 +10,8 @@ app.use(express.json({ limit: "10kb" })); //Limit the size of jsons to prevent a
 var port = process.env.PORT || 8000; //Only Uncomment for testing on local servers
 app.listen(port);
 
-app.get("/downloadGame/:userId", (req, res) =>{
-    
+app.get("/downloadGame", (req, res) =>{
+    res.download("./gameFiles/GalacticVanguard.zip", "gvGameFile.zip")
 })
 app.get("/latestGameVersion", (req,res)=>{
     res.send({"version": semver.valid(process.env.GAMEVERSION) })
