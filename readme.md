@@ -1,1 +1,1 @@
-test
+# Galactic Vanguard API
