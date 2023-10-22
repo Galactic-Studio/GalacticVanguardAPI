@@ -1,0 +1,5 @@
+{
+  "version": "0.0.1",
+  "maxPlayers": 40,
+  "defaultRegion": "us-east"
+}
